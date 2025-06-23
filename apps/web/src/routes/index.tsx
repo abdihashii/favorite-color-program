@@ -1,7 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
 import ConnectButton from "@/components/ConnectButton";
 import { useAppKitWallet } from "@/hooks/use-appkit-wallet";
 import { useColor } from "@/hooks/use-color";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   component: Home,
