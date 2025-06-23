@@ -1,7 +1,7 @@
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
-import { FavoriteColorProgram } from "../target/types/favorite_color_program";
 import { expect } from "chai";
+import { FavoriteColorProgram } from "../../rust-services/target/types/favorite_color_program";
 
 describe("favorite-color-program", () => {
   // Configure the client to use the local cluster.

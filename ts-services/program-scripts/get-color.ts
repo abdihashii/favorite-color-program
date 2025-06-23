@@ -1,6 +1,6 @@
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
-import { FavoriteColorProgram } from "../target/types/favorite_color_program";
+import { FavoriteColorProgram } from "../../rust-services/target/types/favorite_color_program";
 
 async function readUserColor(userPublicKey: string) {
   // Validate the user public key
