@@ -1,0 +1,22 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = false
+skip-lint = false
+
+[programs.devnet]
+favorite_color_program = "AMt9tGcfKDkFEVQKAHjLc6Tcs9eSPfwziinE7nFZtAMv"
+
+[programs.localnet]
+favorite_color_program = "AMt9tGcfKDkFEVQKAHjLc6Tcs9eSPfwziinE7nFZtAMv"
+
+[registry]
+url = "https://api.anchor.so"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/A1.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
